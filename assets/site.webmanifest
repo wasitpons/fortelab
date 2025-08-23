@@ -1,0 +1,27 @@
+{
+  "name": "ForteLab",
+  "short_name": "ForteLab",
+  "description": "Innovation lab that connects people, data, and technology. Build powerful AI-first experiences that make daily life easier for everyone.",
+  "icons": [
+    {
+      "src": "./fortelab_icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#1B5CFF",
+  "background_color": "#FFFFFF",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "categories": ["business", "technology", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
