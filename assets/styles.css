@@ -194,7 +194,7 @@ h2{font-size:40px;margin:0 0 16px;color:var(--navy);font-weight:700;text-align:c
 .cta-row{display:flex;gap:16px;justify-content:center;margin-top:32px}
 
 /* Footer */
-.footer{border-top:1px solid #e2e8f0;background:#fff}
+.footer{border-top:1px solid #e2e8f0;background:#fff;padding:20px}
 .footer-inner{display:grid;grid-template-columns:1fr;gap:32px;align-items:start;padding:48px 0 32px}
 .foot-brand .brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
 .foot-brand .logo{width:32px;height:32px}
