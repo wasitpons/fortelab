@@ -29,19 +29,6 @@ function initMobileMenu() {
     mobileMenuBtn.addEventListener('click', function() {
       mobileMenu.classList.toggle('open');
       mobileMenuBtn.classList.toggle('active');
-      
-      // Animate hamburger icon
-      const spans = mobileMenuBtn.querySelectorAll('span');
-      if (mobileMenuBtn.classList.contains('active')) {
-        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-        spans[1].style.opacity = '0';
-        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-      } else {
-        spans.forEach(span => {
-          span.style.transform = '';
-          span.style.opacity = '';
-        });
-      }
     });
 
     // Close mobile menu when clicking on links
@@ -49,11 +36,6 @@ function initMobileMenu() {
       link.addEventListener('click', function() {
         mobileMenu.classList.remove('open');
         mobileMenuBtn.classList.remove('active');
-        const spans = mobileMenuBtn.querySelectorAll('span');
-        spans.forEach(span => {
-          span.style.transform = '';
-          span.style.opacity = '';
-        });
       });
     });
   }
@@ -413,21 +395,23 @@ function loadNewsletterArticles() {
   // Sort articles by date (newest first)
   const sortedArticles = newsletterArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
   
-  // Create carousel HTML with side navigation
-  const carouselHTML = `
-    <div class="newsletter-carousel-container">
-      <button class="carousel-btn carousel-btn-left" id="carousel-prev">‹</button>
-      <div class="newsletter-carousel">
-        ${sortedArticles.map(article => createArticlePreview(article)).join('')}
-      </div>
-      <button class="carousel-btn carousel-btn-right" id="carousel-next">›</button>
+  // Create simple grid with "View All" button
+  const articlesToShow = sortedArticles.slice(0, 3);
+  const gridHTML = `
+    <div class="newsletter-simple-grid">
+      ${articlesToShow.map(article => createArticlePreview(article)).join('')}
+    </div>
+    <div class="newsletter-view-all">
+      <button class="btn btn-view-all" id="view-all-newsletters">
+        View All Articles <i class="fas fa-arrow-right"></i>
+      </button>
     </div>
   `;
   
-  newsletterGrid.innerHTML = carouselHTML;
+  newsletterGrid.innerHTML = gridHTML;
   
-  // Initialize carousel functionality
-  initNewsletterCarousel();
+  // Initialize newsletter functionality
+  initNewsletterGrid();
 }
 
 function updateNewsletter() {
@@ -438,50 +422,15 @@ let currentSlide = 0;
 let slidesPerView = 3;
 let totalSlides = 0;
 
-function initNewsletterCarousel() {
-  const carousel = document.querySelector('.newsletter-carousel');
-  const prevBtn = document.getElementById('carousel-prev');
-  const nextBtn = document.getElementById('carousel-next');
+function initNewsletterGrid() {
+  const viewAllBtn = document.getElementById('view-all-newsletters');
   
-  if (!carousel) return;
-  
-  totalSlides = carousel.children.length;
-  
-  // Determine slides per view based on screen size
-  function updateSlidesPerView() {
-    const width = window.innerWidth;
-    if (width < 768) {
-      slidesPerView = 1;
-    } else if (width < 1024) {
-      slidesPerView = 2;
-    } else {
-      slidesPerView = 3;
-    }
+  // View All button handler
+  if (viewAllBtn) {
+    viewAllBtn.addEventListener('click', () => {
+      showNewsletterPage();
+    });
   }
-  
-  updateSlidesPerView();
-  
-  function updateCarousel() {
-    const slideWidth = 380 + 24; // fixed width + gap
-    carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  }
-  
-  // Navigation handlers with infinite loop
-  prevBtn.addEventListener('click', () => {
-    currentSlide--;
-    if (currentSlide < 0) {
-      currentSlide = Math.max(0, totalSlides - slidesPerView);
-    }
-    updateCarousel();
-  });
-  
-  nextBtn.addEventListener('click', () => {
-    currentSlide++;
-    if (currentSlide > totalSlides - slidesPerView) {
-      currentSlide = 0;
-    }
-    updateCarousel();
-  });
   
   // Article click handlers
   document.querySelectorAll('.newsletter-article-preview').forEach(preview => {
@@ -490,15 +439,103 @@ function initNewsletterCarousel() {
       showArticle(articleId);
     });
   });
+}
+
+function showNewsletterPage() {
+  // Hide main content
+  hideMainContent();
   
-  // Responsive handling
-  window.addEventListener('resize', () => {
-    updateSlidesPerView();
-    updateCarousel();
+  // Show newsletter page
+  showNewsletterFullPage();
+  
+  // Update URL
+  history.pushState({view: 'newsletter'}, 'Newsletter', '#newsletter');
+  currentView = 'newsletter';
+  window.scrollTo(0, 0);
+}
+
+function showNewsletterFullPage() {
+  // Create or get newsletter container
+  let newsletterContainer = document.getElementById('newsletter-full-page');
+  if (!newsletterContainer) {
+    newsletterContainer = document.createElement('div');
+    newsletterContainer.id = 'newsletter-full-page';
+    newsletterContainer.className = 'newsletter-full-page';
+    
+    // Insert after navigation
+    const navigation = document.getElementById('navigation-container');
+    navigation.parentNode.insertBefore(newsletterContainer, navigation.nextSibling);
+  }
+  
+  // Sort all articles by date
+  const sortedArticles = newsletterArticles.sort((a, b) => new Date(b.date) - new Date(a.date));
+  
+  newsletterContainer.innerHTML = `
+    <section class="newsletter-page section">
+      <div class="container">
+        <nav class="newsletter-breadcrumb">
+          <button onclick="showHome()" class="back-button">
+            <i class="fas fa-arrow-left"></i> Back to Home
+          </button>
+        </nav>
+        
+        <div class="newsletter-page-header">
+          <h1 class="newsletter-page-title">Innovation Intelligence Reports</h1>
+          <p class="newsletter-page-subtitle">Deep insights and trend analysis from our research team — helping creators and innovators stay ahead of the technology curve.</p>
+        </div>
+        
+        <div class="newsletter-filters">
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">All Articles</button>
+            <button class="filter-btn" data-filter="AI Innovation">AI Innovation</button>
+            <button class="filter-btn" data-filter="Developer Experience">Developer Experience</button>
+            <button class="filter-btn" data-filter="Open Source & Community">Open Source</button>
+          </div>
+        </div>
+        
+        <div class="newsletter-full-grid">
+          ${sortedArticles.map(article => createArticlePreview(article)).join('')}
+        </div>
+      </div>
+    </section>
+  `;
+  
+  // Initialize newsletter page functionality
+  initNewsletterPageFilters();
+  
+  // Add article click handlers
+  document.querySelectorAll('#newsletter-full-page .newsletter-article-preview').forEach(preview => {
+    preview.addEventListener('click', function() {
+      const articleId = this.dataset.articleId || this.getAttribute('onclick').match(/'([^']+)'/)[1];
+      showArticle(articleId);
+    });
   });
+}
+
+function initNewsletterPageFilters() {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const articles = document.querySelectorAll('#newsletter-full-page .newsletter-article-preview');
   
-  // Initial update
-  updateCarousel();
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const filter = this.getAttribute('data-filter');
+      
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Filter articles
+      articles.forEach(article => {
+        const category = article.querySelector('.article-badge').textContent.trim();
+        
+        if (filter === 'all' || category === filter) {
+          article.style.display = 'flex';
+        } else {
+          article.style.display = 'none';
+        }
+      });
+    });
+  });
 }
 
 function createArticlePreview(article) {
@@ -559,17 +596,8 @@ function showArticle(articleId) {
 }
 
 function showHome() {
-  // Hide article detail
-  hideArticleDetail();
-  
-  // Show main content
-  showMainContent();
-  
-  // Update URL
-  history.pushState({view: 'home'}, 'ForteLab', '#');
-  
-  // Update current view
-  currentView = 'home';
+  // Navigate to root for GitHub Pages compatibility
+  window.location.href = './index.html';
 }
 
 function hideMainContent() {
@@ -603,7 +631,7 @@ function showArticleDetail(article) {
   
   const currentLang = getCurrentLanguage();
   const formattedDate = formatDate(article.date, currentLang);
-  const backText = currentLang === 'th' ? '← กลับหน้าหลัก' : '← Back to Home';
+  const backText = currentLang === 'th' ? 'กลับหน้าหลัก' : 'Back to Home';
   
   articleContainer.innerHTML = `
     <section class="article-detail section">
@@ -716,7 +744,25 @@ function initRouting() {
     if (article) {
       showArticle(articleId);
     }
+  } else if (hash === '#newsletter') {
+    showNewsletterPage();
   }
+  
+  // Handle back/forward navigation
+  window.addEventListener('popstate', (event) => {
+    const state = event.state;
+    if (state) {
+      if (state.view === 'article') {
+        showArticle(state.articleId);
+      } else if (state.view === 'newsletter') {
+        showNewsletterPage();
+      } else if (state.view === 'home') {
+        showHome();
+      }
+    } else {
+      showHome();
+    }
+  });
 }
 
 function openArticle(filename) {

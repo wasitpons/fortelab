@@ -6,8 +6,7 @@ const translations = {
       solutions: "Solutions",
       useCases: "Use Cases", 
       newsletter: "Newsletter",
-      why: "Why ForteLab",
-      developers: "Developers",
+      creative: "Creative Hub",
       faq: "FAQ"
     },
     
@@ -257,8 +256,7 @@ const translations = {
       solutions: "โซลูชั่น",
       useCases: "กรณีการใช้งาน",
       newsletter: "ข่าวสาร",
-      why: "ทำไมเลือก ForteLab", 
-      developers: "นักพัฒนา",
+      creative: "ครีเอทีฟ ฮับ",
       faq: "คำถามที่พบบ่อย"
     },
     

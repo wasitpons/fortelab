@@ -27,18 +27,8 @@ const Templates = {
           </div>
           <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
           <a href="#newsletter" data-i18n="nav.newsletter">Newsletter</a>
-          <a href="#why" data-i18n="nav.why">Why ForteLab</a>
-          <div class="menu-item dropdown">
-            <a href="#developers" data-i18n="nav.developers">Developers</a>
-            <div class="dropdown-content">
-              <div class="dropdown-section">
-                <h4>Resources</h4>
-                <a href="#developers">Documentation</a>
-                <a href="#developers">API Reference</a>
-                <a href="#developers">Code Samples</a>
-              </div>
-            </div>
-          </div>
+          <a href="#creative-hub" data-i18n="nav.creative">Creative Hub</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
           
           <!-- Language Switcher -->
           <div class="language-switcher">
@@ -62,8 +52,8 @@ const Templates = {
           <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
           <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
           <a href="#newsletter" data-i18n="nav.newsletter">Newsletter</a>
-          <a href="#why" data-i18n="nav.why">Why ForteLab</a>
-          <a href="#developers" data-i18n="nav.developers">Developers</a>
+          <a href="#creative-hub" data-i18n="nav.creative">Creative Hub</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
           <div class="mobile-language-switcher">
             <button class="lang-btn" data-lang-switch="en">English</button>
             <button class="lang-btn" data-lang-switch="th">ไทย</button>
@@ -196,50 +186,50 @@ const Templates = {
     <!-- Footer -->
     <footer class="footer">
       <div class="footer-inner">
-        <div class="foot-brand">
-          <div class="brand">
-            <img class="logo" src="./assets/fortelab_icon.svg" alt="ForteLab logo icon" />
-            <span class="wordmark">ForteLab</span>
+        <div class="footer-main">
+          <div class="foot-brand">
+            <div class="brand">
+              <img class="logo" src="./assets/fortelab_icon.svg" alt="ForteLab logo icon" />
+              <span class="wordmark">ForteLab</span>
+            </div>
+            <small data-i18n="footer.tagline">Innovation. Connection. Future.</small>
+            
+            <div class="foot-cta">
+              <h4 data-i18n="footer.cta.title">Ready to innovate?</h4>
+              <p data-i18n="footer.cta.subtitle">Join our creative community and start building the future.</p>
+              <a href="#newsletter" class="btn" data-i18n="footer.cta.button">Get Started</a>
+            </div>
           </div>
-          <small data-i18n="footer.tagline">Innovation. Connection. Future.</small>
           
-          <div class="foot-cta">
-            <h4 data-i18n="footer.cta.title">Ready to innovate?</h4>
-            <p data-i18n="footer.cta.subtitle">Join our creative community and start building the future.</p>
-            <a href="#newsletter" class="btn" data-i18n="footer.cta.button">Get Started</a>
-          </div>
-        </div>
-        
-        <div class="foot-links">
-          <div class="footer-section">
-            <h4>Product</h4>
-            <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
-            <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
-            <a href="#why" data-i18n="nav.why">Why ForteLab</a>
-            <a href="#developers" data-i18n="nav.developers">Developers</a>
-          </div>
-          <div class="footer-section">
-            <h4>Company</h4>
-            <a href="#newsletter" data-i18n="nav.newsletter">Newsletter</a>
-            <a href="#faq" data-i18n="nav.faq">FAQ</a>
-            <a href="mailto:hello@fortelab.dev">Contact</a>
-          </div>
-          <div class="footer-section">
-            <h4 data-i18n="footer.social.title">Follow Us</h4>
-            <a href="https://www.facebook.com/profile.php?id=61579829097837" target="_blank" rel="noopener noreferrer" class="social-link">
-              <span>Facebook</span>
-            </a>
-            <a href="https://www.linkedin.com/company/fortelab-ai" target="_blank" rel="noopener noreferrer" class="social-link">
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/fortelab" target="_blank" rel="noopener noreferrer" class="social-link">
-              <span>GitHub</span>
-            </a>
+          <div class="foot-links">
+            <div class="footer-section">
+              <h4>Product</h4>
+              <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
+              <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
+              <a href="#creative-hub" data-i18n="nav.creative">Creative Hub</a>
+            </div>
+            <div class="footer-section">
+              <h4>Company</h4>
+              <a href="#newsletter" data-i18n="nav.newsletter">Newsletter</a>
+              <a href="#faq" data-i18n="nav.faq">FAQ</a>
+              <a href="mailto:hello@fortelab.dev">Contact</a>
+            </div>
+            <div class="footer-section">
+              <h4 data-i18n="footer.social.title">Follow Us</h4>
+              <a href="https://www.facebook.com/profile.php?id=61579829097837" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>Facebook</span>
+              </a>
+              <a href="https://www.linkedin.com/company/fortelab-ai" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>LinkedIn</span>
+              </a>
+              <a href="https://github.com/fortelab" target="_blank" rel="noopener noreferrer" class="social-link">
+                <span>GitHub</span>
+              </a>
+            </div>
           </div>
         </div>
         
         <div class="foot-legal">
-          <a href="#hero" class="back-to-top" aria-label="Back to top"></a>
           <small data-i18n="footer.copyright">© 2025 ForteLab — All rights reserved.</small>
         </div>
       </div>
