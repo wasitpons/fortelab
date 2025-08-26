@@ -5,72 +5,93 @@ const translations = {
     nav: {
       solutions: "Solutions",
       useCases: "Use Cases", 
+      newsletter: "Newsletter",
       why: "Why ForteLab",
       developers: "Developers",
-      contact: "Contact"
+      faq: "FAQ"
     },
     
     // Hero Section
     hero: {
-      title: "Transforming Public Data into Intelligent Automation",
-      subtitle: "ForteLab harnesses the power of AI to collect, analyze, and transform public data streams into personalized automation that simplifies your daily workflow and decision-making processes.",
-      cta1: "Explore Intelligence",
-      cta2: "Schedule Demo",
-      bullets: ["Real-time Data Processing", "Privacy-First Architecture", "Enterprise-Grade Security"],
-      trustedBy: "Trusted by professionals"
+      title: "Innovate. Connect. Transform.",
+      subtitle: "Connect people, data, and ideas with a single platform. Create content, analyze insights, and bring imagination to life — simply and securely.",
+      cta1: "Start Innovating",
+      cta2: "Connect with Us",
+      bullets: ["Innovation-First", "Connected Experiences", "Transformative Results"],
+      trustedBy: "Trusted by innovators"
+    },
+
+    // Reviews Section  
+    reviews: {
+      title: "What Our Partners & Investors Say",
+      review1: {
+        quote: "ForteLab's innovation approach has consistently delivered breakthrough solutions. Their ability to balance creativity with practical productivity tools makes them an ideal partner.",
+        name: "Sarah Chen",
+        role: "Managing Partner, Innovation Ventures"
+      },
+      review2: {
+        quote: "The team at ForteLab understands both the technical depth and market needs. Their dual focus on productivity and creativity sets them apart in the AI space.",
+        name: "Marcus Rodriguez", 
+        role: "Strategic Partner, TechForward Capital"
+      },
+      review3: {
+        quote: "Working with ForteLab has accelerated our digital transformation. Their tools genuinely improve both efficiency and inspire creative solutions.",
+        name: "Dr. Priya Patel",
+        role: "Chief Innovation Officer, Global Solutions Inc."
+      }
     },
     
     // Solutions Section
     solutions: {
-      title: "Intelligent Data Solutions for Modern Professionals", 
-      subtitle: "Advanced AI-driven systems that transform raw public data into actionable intelligence for your daily operations.",
+      title: "Boost Your Productivity with AI-Powered Tools", 
+      subtitle: "Streamline your workflow with intelligent automation and data-driven insights that maximize efficiency.",
       cards: [
         {
-          title: "Automated Data Collection",
-          description: "Continuously harvest and process relevant public datasets using advanced AI algorithms to ensure comprehensive coverage.",
-          cta: "Explore Collection →"
-        },
-        {
-          title: "Intelligent Analytics Engine", 
-          description: "Transform raw data streams into meaningful patterns, trends, and actionable insights tailored to your professional needs.",
+          title: "Smart Analytics Dashboard",
+          description: "Real-time data visualization and automated insights that transform complex information into actionable decisions.",
           cta: "View Analytics →"
         },
         {
-          title: "Personalized Automation",
-          description: "Deploy custom AI agents that automate routine tasks based on real-time data analysis and your behavioral patterns.",
-          cta: "Configure Automation →"
+          title: "Workflow Automation", 
+          description: "Eliminate repetitive tasks with intelligent automation that learns your patterns and optimizes processes.",
+          cta: "Automate Now →"
+        },
+        {
+          title: "Performance Optimizer",
+          description: "AI-driven performance monitoring and optimization suggestions to maximize your team's productivity.",
+          cta: "Optimize Now →"
         }
       ]
     },
     
     // Use Cases Section
     usecases: {
-      title: "Advanced Automation for Professional Excellence",
-      subtitle: "Experience how our AI systems leverage public data streams to create personalized automation workflows that enhance professional decision-making.",
+      title: "Real-world applications for development teams",
+      subtitle: "Discover how ForteLab IDE transforms your development workflow with intelligent tools and innovation-focused features.",
       cards: [
         {
-          title: "Automated Financial Intelligence",
-          description: "Deploy AI agents that continuously monitor economic indicators, market fluctuations, and regulatory changes to automatically optimize your financial strategies and investment portfolios.",
-          tag1: "Real-time Monitoring",
-          tag2: "Automated Optimization"
+          title: "Smart Code Development",
+          description: "AI-powered code suggestions, intelligent refactoring, and automated documentation generation that accelerates your development cycle.",
+          tag1: "Code Intelligence",
+          tag2: "Auto-Documentation"
         },
         {
-          title: "Intelligent Workflow Management",
-          description: "Implement personalized AI systems that analyze your work patterns, external dependencies, and industry trends to automatically schedule tasks and predict optimal productivity windows.",
-          tag1: "Pattern Recognition", 
-          tag2: "Predictive Scheduling"
+          title: "Innovation Prototyping",
+          description: "Rapid prototyping tools with pre-built AI models and experimental features that help you test ideas quickly and efficiently.",
+          tag1: "Rapid Prototyping", 
+          tag2: "AI Model Integration"
         },
         {
-          title: "Personalized Health Analytics",
-          description: "Harness environmental and demographic data streams to create individualized health optimization protocols that automatically adapt to changing conditions and personal biomarkers.",
-          tag1: "Environmental Analysis",
-          tag2: "Adaptive Protocols"
+          title: "Team Collaboration",
+          description: "Real-time collaboration features, intelligent code review, and project management tools designed for innovative development teams.",
+          tag1: "Real-time Sync",
+          tag2: "Smart Reviews"
         },
         {
-          title: "Dynamic Knowledge Automation",
-          description: "Utilize AI-powered content analysis to automatically curate and synthesize industry knowledge, creating personalized learning pipelines that adapt to your career trajectory.",
-          tag1: "Automated Curation",
-          tag2: "Dynamic Synthesis"
+          title: "Performance Analytics",
+          description: "Advanced analytics and monitoring tools that provide insights into code performance, team productivity, and project health metrics.",
+          tag1: "Code Analytics",
+          tag2: "Team Insights"
         }
       ]
     },
@@ -124,25 +145,108 @@ const translations = {
       cta2: "Talk to an expert"
     },
     
+    // Newsletter Section (Research)
+    newsletter: {
+      badge: "ForteLab Research",
+      title: "Innovation Intelligence Reports", 
+      subtitle: "Deep insights and trend analysis from our research team — helping creators and innovators stay ahead of the technology curve.",
+      stats: {
+        readers: "Research Subscribers",
+        reports: "Published Reports", 
+        accuracy: "Trend Accuracy"
+      },
+      cta: {
+        title: "Join 50,000+ Innovation Leaders",
+        subtitle: "Get exclusive research insights, trend forecasts, and actionable intelligence delivered to your inbox.",
+        primary: "Subscribe to Research",
+        secondary: "View Sample Reports"
+      }
+    },
+
+    // FAQ Section
+    faq: {
+      title: "Frequently Asked Questions",
+      subtitle: "Everything you need to know about ForteLab and our innovation platform.",
+      q1: {
+        question: "What is ForteLab and how does it work?",
+        answer: "ForteLab is an Innovation Lab that combines AI-powered productivity tools with creative development platforms. We provide developers, creators, and professionals with intelligent tools that enhance both efficiency and creativity in their workflows."
+      },
+      q2: {
+        question: "Who can benefit from ForteLab's tools?",
+        answer: "Our platform is designed for two main audiences: working professionals who need productivity enhancement tools, and content creators who want AI-assisted creative workflows. Whether you're a developer, designer, writer, or entrepreneur, ForteLab has tools to amplify your capabilities."
+      },
+      q3: {
+        question: "What makes ForteLab different from other AI platforms?",
+        answer: "ForteLab uniquely balances productivity and creativity. While many platforms focus solely on efficiency or creativity, we provide integrated solutions that enhance both aspects of your work. Our Innovation Lab approach means we're constantly developing cutting-edge features based on real user needs."
+      },
+      q4: {
+        question: "Is there a free trial or demo available?",
+        answer: "Yes! We offer demo access to our core features. You can explore our analytics dashboard, workflow automation tools, and creative AI assistants. Contact our team through the newsletter signup or reach out to hello@fortelab.dev for demo access."
+      },
+      q5: {
+        question: "How do I get started with ForteLab?",
+        answer: "Getting started is easy! Join our Creative Innovation Hub newsletter to stay updated on new features and early access opportunities. Our team will guide you through the onboarding process and help you discover which tools best fit your workflow."
+      },
+      q6: {
+        question: "What kind of support do you provide?",
+        answer: "We provide comprehensive support including documentation, video tutorials, and direct assistance from our team. As an Innovation Lab, we also actively collaborate with our users to continuously improve our platform based on their feedback and needs."
+      }
+    },
+
+    // Creative Innovation Hub
+    creative: {
+      title: "Creative Innovation Hub",
+      subtitle: "Complete AI toolkit for Thai creators — Transform content across multiple languages and platforms while tapping into Thai social trends for creative inspiration",
+      tools: {
+        trend: {
+          title: "Trend2Content",
+          desc: "Track Thai social trends in real-time and transform them into brand-perfect content ideas that resonate with your audience"
+        },
+        format: {
+          title: "Multi-Format Studio", 
+          desc: "One content, multiple formats — Create Instagram posts, TikTok videos, Facebook updates, and YouTube thumbnails with automatic resizing and color matching"
+        },
+        visual: {
+          title: "Auto-Visual Generator",
+          desc: "AI-powered graphics, infographics, and visual content in authentic Thai style that captivates and communicates clearly"
+        },
+        caption: {
+          title: "Caption AI Thai",
+          desc: "Write engaging Thai captions with humor and high engagement potential, customizable to match your brand voice"
+        }
+      },
+      cta: {
+        title: "Ready to create content that resonates with Thai audiences?",
+        subtitle: "Start free or join Early Access to get first dibs on new features",
+        primary: "Join Early Access",
+        secondary: "View Sample Work"
+      }
+    },
+    
     // Contact Section
     contact: {
-      title: "Enterprise Integration Consultation",
-      subtitle: "Schedule a technical consultation to discuss your data automation requirements and explore custom AI integration solutions.",
+      title: "Contact us",
+      subtitle: "Tell us about your development needs — we'll help you innovate and create.",
       form: {
-        name: "Full Name",
-        email: "Professional Email", 
-        message: "Describe your data automation requirements and current workflow challenges",
-        submit: "Request Consultation",
-        success: "Thank you for your inquiry. Our technical team will contact you within 24 hours to discuss your requirements."
+        name: "Your name",
+        email: "Email", 
+        message: "Tell us what you want to build",
+        submit: "Send",
+        success: "Thank you for your message. Our team will contact you soon to discuss your project."
       }
     },
     
     // Footer
     footer: {
-      tagline: "Innovation. Connection. Future.",
+      tagline: "Innovate. Connect. Transform.",
       copyright: "© 2025 ForteLab — All rights reserved.",
       social: {
         title: "Follow Us"
+      },
+      cta: {
+        title: "Ready to innovate?",
+        subtitle: "Transform your ideas into reality. Connect with the future of creativity.",
+        button: "Start Transforming"
       }
     }
   },
@@ -152,72 +256,93 @@ const translations = {
     nav: {
       solutions: "โซลูชั่น",
       useCases: "กรณีการใช้งาน",
+      newsletter: "ข่าวสาร",
       why: "ทำไมเลือก ForteLab", 
       developers: "นักพัฒนา",
-      contact: "ติดต่อเรา"
+      faq: "คำถามที่พบบ่อย"
     },
     
     // Hero Section
     hero: {
-      title: "แปลงข้อมูลสาธารณะเป็นระบบอัตโนมัติอัจฉริยะ",
-      subtitle: "ForteLab ใช้พลัง AI ในการรวบรวม วิเคราะห์ และแปลงข้อมูลสาธารณะให้เป็นระบบอัตโนมัติส่วนบุคคลที่ทำให้การทำงานประจำวันและการตัดสินใจของคุณง่ายขึ้น",
-      cta1: "สำรวจระบบอัจฉริยะ",
-      cta2: "นัดหมายสาธิต",
-      bullets: ["ประมวลผลข้อมูลแบบเรียลไทม์", "สถาปัตยกรรมที่เน้นความเป็นส่วนตัว", "ความปลอดภัยระดับองค์กร"],
-      trustedBy: "ได้รับความไว้วางใจจากผู้เชี่ยวชาญ"
+      title: "นวัตกรรม เชื่อมต่อ เปลี่ยนแปลง",
+      subtitle: "เชื่อมต่อคน ข้อมูล และไอเดียด้วยแพลตฟอร์มเดียว สร้างคอนเทนต์ วิเคราะห์ข้อมูลเชิงลึก และทำให้จินตนาการเป็นจริง — อย่างง่ายและปลอดภัย",
+      cta1: "เริ่มสร้างนวัตกรรม",
+      cta2: "เชื่อมต่อกับเรา",
+      bullets: ["นวัตกรรมเป็นหลัก", "ประสบการณ์ที่เชื่อมต่อ", "ผลลัพธ์ที่เปลี่ยนแปลง"],
+      trustedBy: "ได้รับความไว้วางใจจากนักนวัตกรรม"
+    },
+
+    // Reviews Section
+    reviews: {
+      title: "พาร์ทเนอร์และนักลงทุนพูดถึงเรา",
+      review1: {
+        quote: "แนวทางนวัตกรรมของ ForteLab ได้สร้างโซลูชันที่ก้าวล้ำอย่างต่อเนื่อง ความสามารถในการสมดุลระหว่างความคิดสร้างสรรค์กับเครื่องมือเพิ่มประสิทธิภาพทำให้พวกเขาเป็นพาร์ทเนอร์ในอุดมคติ",
+        name: "Sarah Chen",
+        role: "Managing Partner, Innovation Ventures"
+      },
+      review2: {
+        quote: "ทีมที่ ForteLab เข้าใจทั้งความลึกทางเทคนิคและความต้องการของตลาด การมุ่งเน้นทั้งประสิทธิภาพและความคิดสร้างสรรค์ทำให้พวกเขาแตกต่างในพื้นที่ AI",
+        name: "Marcus Rodriguez",
+        role: "Strategic Partner, TechForward Capital"  
+      },
+      review3: {
+        quote: "การทำงานร่วมกับ ForteLab ช่วยเร่งการเปลี่ยนแปลงดิจิทัลของเรา เครื่องมือของพวกเขาช่วยเพิ่มประสิทธิภาพและสร้างแรงบันดาลใจในการหาโซลูชันสร้างสรรค์จริงๆ",
+        name: "Dr. Priya Patel",
+        role: "Chief Innovation Officer, Global Solutions Inc."
+      }
     },
     
     // Solutions Section
     solutions: {
-      title: "โซลูชันข้อมูลอัจฉริยะสำหรับผู้เชี่ยวชาญยุคใหม่",
-      subtitle: "ระบบขับเคลื่อนด้วย AI ขั้นสูงที่แปลงข้อมูลสาธารณะดิบให้เป็นข้อมูลเชิงลึกที่ใช้งานได้จริงสำหรับการดำเนินงานประจำวันของคุณ",
+      title: "เพิ่มประสิทธิภาพด้วยเครื่องมือ AI ที่ทรงพลัง",
+      subtitle: "ปรับปรุงขั้นตอนการทำงานด้วยระบบอัตโนมัติอัจฉริยะและข้อมูลเชิงลึกเพื่อเพิ่มประสิทธิภาพสูงสุด",
       cards: [
         {
-          title: "ระบบรวบรวมข้อมูลอัตโนมัติ",
-          description: "เก็บรวบรวมและประมวลผลชุดข้อมูลสาธารณะที่เกี่ยวข้องอย่างต่อเนื่องด้วยอัลกอริธึม AI ขั้นสูงเพื่อให้แน่ใจว่าครอบคลุมอย่างสมบูรณ์",
-          cta: "สำรวจการรวบรวม →"
+          title: "แดชบอร์ดวิเคราะห์อัจฉริยะ",
+          description: "การแสดงข้อมูลแบบเรียลไทม์และข้อมูลเชิงลึกอัตโนมัติที่เปลี่ยนข้อมูลซับซ้อนให้เป็นการตัดสินใจที่นำไปปฏิบัติได้",
+          cta: "ดูข้อมูลวิเคราะห์ →"
         },
         {
-          title: "เครื่องมือวิเคราะห์อัจฉริยะ",
-          description: "แปลงสตรีมข้อมูลดิบให้เป็นรูปแบบ แนวโน้ม และข้อมูลเชิงลึกที่มีความหมายซึ่งปรับแต่งให้เหมาะกับความต้องการของผู้เชี่ยวชาญ",
-          cta: "ดูการวิเคราะห์ →"
+          title: "ระบบอัตโนมัติการทำงาน",
+          description: "กำจัดงานซ้ำซากด้วยระบบอัตโนมัติอัจฉริยะที่เรียนรู้รูปแบบของคุณและปรับปรุงกระบวนการ",
+          cta: "เริ่มระบบอัตโนมัติ →"
         },
         {
-          title: "ระบบอัตโนมัติส่วนบุคคล",
-          description: "ติดตั้งตัวแทน AI แบบกำหนดเองที่ทำงานตามปกติโดยอัตโนมัติตามการวิเคราะห์ข้อมูลแบบเรียลไทม์และรูปแบบพฤติกรรมของคุณ",
-          cta: "กำหนดค่าระบบอัตโนมัติ →"
+          title: "เครื่องมือปรับปรุงประสิทธิภาพ",
+          description: "การตรวจสอบประสิทธิภาพด้วย AI และคำแนะนำการปรับปรุงเพื่อเพิ่มประสิทธิภาพทีมของคุณสูงสุด",
+          cta: "ปรับปรุงเลย →"
         }
       ]
     },
     
     // Use Cases Section
     usecases: {
-      title: "ระบบอัตโนมัติขั้นสูงเพื่อความเป็นเลิศทางวิชาชีพ",
-      subtitle: "สัมผัสประสบการณ์ว่าระบบ AI ของเราใช้สตรีมข้อมูลสาธารณะเพื่อสร้างเวิร์กโฟลว์อัตโนมัติส่วนบุคคลที่เสริมการตัดสินใจทางวิชาชีพ",
+      title: "การประยุกต์ใช้จริงสำหรับทีมพัฒนา",
+      subtitle: "ค้นพบว่า ForteLab IDE เปลี่ยนแปลงเวิร์กโฟลว์การพัฒนาของคุณด้วยเครื่องมืออัจฉริยะและฟีเจอร์เน้นนวัตกรรม",
       cards: [
         {
-          title: "ระบบข่าวกรองการเงินอัตโนมัติ",
-          description: "ใช้งานตัวแทน AI ที่ติดตามตัวชี้วัดเศรษฐกิจ ความผันผวนของตลาด และการเปลี่ยนแปลงของกฎระเบียบอย่างต่อเนื่องเพื่อปรับกลยุทธ์ทางการเงินและพอร์ตการลงทุนของคุณโดยอัตโนมัติ",
-          tag1: "การติดตามแบบเรียลไทม์",
-          tag2: "การปรับให้เหมาะสมอัตโนมัติ"
+          title: "การพัฒนาโค้ดอัจฉริยะ",
+          description: "การเสริมโค้ดด้วย AI การ refactor อัจฉริยะ และการสร้างเอกสารอัตโนมัติที่เร่งวงจรการพัฒนาของคุณ",
+          tag1: "ความเฉลียวโค้ด",
+          tag2: "เอกสารอัตโนมัติ"
         },
         {
-          title: "ระบบจัดการเวิร์กโฟลว์อัจฉริยะ",
-          description: "นำระบบ AI ส่วนบุคคลมาใช้เพื่อวิเคราะห์รูปแบบการทำงาน การพึ่งพาภายนอก และแนวโน้มอุตสาหกรรมเพื่อจัดตารางงานโดยอัตโนมัติและทำนายช่วงเวลาประสิทธิภาพที่เหมาะสม", 
-          tag1: "การรู้จำรูปแบบ",
-          tag2: "การจัดตารางเชิงทำนาย"
+          title: "การสร้างต้นแบบนวัตกรรม",
+          description: "เครื่องมือสร้างต้นแบบอย่างรวดเร็วด้วยโมเดล AI ที่พร้อมใช้งานและฟีเจอร์ทดลองที่ช่วยให้คุณทดสอบไอเดียได้อย่างรวดเร็วและมีประสิทธิภาพ", 
+          tag1: "การสร้างต้นแบบรวดเร็ว",
+          tag2: "การบูรณาการโมเดล AI"
         },
         {
-          title: "การวิเคราะห์สุขภาพส่วนบุคคล",
-          description: "ใช้ประโยชน์จากสตรีมข้อมูลสิ่งแวดล้อมและข้อมูลประชากรเพื่อสร้างโปรโตคอลการปรับสุขภาพให้เหมาะสมเฉพาะบุคคลที่ปรับตัวให้เหมาะกับสภาพแวดล้อมที่เปลี่ยนแปลงและตัวชี้วัดทางชีวภาพส่วนบุคคลโดยอัตโนมัติ",
-          tag1: "การวิเคราะห์สิ่งแวดล้อม",
-          tag2: "โปรโตคอลแบบปรับตัว"
+          title: "การร่วมมือของทีม",
+          description: "ฟีเจอร์การร่วมมือแบบเรียลไทม์ การรีวิวโค้ดอัจฉริยะ และเครื่องมือจัดการโปรเจกต์ที่ออกแบบสำหรับทีมพัฒนานวัตกรรม",
+          tag1: "การซิงค์แบบเรียลไทม์",
+          tag2: "การรีวิวอัจฉริยะ"
         },
         {
-          title: "ระบบอัตโนมัติความรู้เชิงไดนามิก",
-          description: "ใช้การวิเคราะห์เนื้อหาที่ขับเคลื่อนด้วย AI เพื่อคัดสรรและสังเคราะห์ความรู้ในอุตสาหกรรมโดยอัตโนมัติ สร้างไปป์ไลน์การเรียนรู้ส่วนบุคคลที่ปรับตัวให้เหมาะกับเส้นทางอาชีพของคุณ",
-          tag1: "การคัดสรรอัตโนมัติ",
-          tag2: "การสังเคราะห์เชิงไดนามิก"
+          title: "การวิเคราะห์ประสิทธิภาพ",
+          description: "เครื่องมือวิเคราะห์และการติดตามขั้นสูงที่ให้ข้อมูลเชิงลึกเกี่ยวกับประสิทธิภาพโค้ด ผลิตภาพของทีม และตัวชี้วัดสุขภาพโปรเจกต์",
+          tag1: "การวิเคราะห์โค้ด",
+          tag2: "ข้อมูลเชิงลึกทีม"
         }
       ]
     },
@@ -271,25 +396,108 @@ const translations = {
       cta2: "คุยกับผู้เชียวชาญ"
     },
     
+    // Newsletter Section (Research)
+    newsletter: {
+      badge: "ทีมวิจัย ForteLab",
+      title: "รายงานวิเคราะห์นวัตกรรม", 
+      subtitle: "ข้อมูลเชิงลึกและการวิเคราะห์เทรนด์จากทีมวิจัยของเรา — ช่วยให้ครีเอเตอร์และนักนวัตกรรมก้าวนำเทคโนโลยี",
+      stats: {
+        readers: "ผู้ติดตามงานวิจัย",
+        reports: "รายงานที่เผยแพร่", 
+        accuracy: "ความแม่นยำ"
+      },
+      cta: {
+        title: "เข้าร่วม 50,000+ ผู้นำนวัตกรรม",
+        subtitle: "รับข้อมูลเชิงลึกพิเศษ การพยากรณ์เทรนด์ และข่าวสารสำคัญส่งตรงถึงอีเมลคุณ",
+        primary: "สมัครรับรายงานวิจัย",
+        secondary: "ดูตัวอย่างรายงาน"
+      }
+    },
+
+    // FAQ Section
+    faq: {
+      title: "คำถามที่พบบ่อย",
+      subtitle: "ทุกสิ่งที่คุณต้องรู้เกี่ยวกับ ForteLab และแพลตฟอร์มนวัตกรรมของเรา",
+      q1: {
+        question: "ForteLab คืออะไรและทำงานอย่างไร?",
+        answer: "ForteLab เป็น Innovation Lab ที่ผสมผสานเครื่องมือเพิ่มประสิทธิภาพด้วย AI กับแพลตฟอร์มการพัฒนาสร้างสรรค์ เราให้บริการนักพัฒนา ผู้สร้างสรรค์ และผู้เชียวชาญด้วยเครื่องมืออัจฉริยะที่ช่วยเพิ่มทั้งประสิทธิภาพและความคิดสร้างสรรค์ในการทำงาน"
+      },
+      q2: {
+        question: "ใครที่ได้รับประโยชน์จากเครื่องมือของ ForteLab?",
+        answer: "แพลตฟอร์มของเราออกแบบมาสำหรับสองกลุ่มหลัก: ผู้เชียวชาญที่ต้องการเครื่องมือเพิ่มประสิทธิภาพ และผู้สร้างเนื้อหาที่ต้องการขั้นตอนการทำงานสร้างสรรค์ด้วย AI ไม่ว่าคุณจะเป็นนักพัฒนา นักออกแบบ นักเขียน หรือผู้ประกอบการ ForteLab มีเครื่องมือเพื่อขยายขีดความสามารถของคุณ"
+      },
+      q3: {
+        question: "อะไรทำให้ ForteLab แตกต่างจากแพลตฟอร์ม AI อื่นๆ?",
+        answer: "ForteLab สร้างสมดุลระหว่างประสิทธิภาพและความคิดสร้างสรรค์อย่างเป็นเอกลักษณ์ ในขณะที่แพลตฟอร์มอื่นๆ มุ่งเน้นแค่ประสิทธิภาพหรือความคิดสร้างสรรค์ เราให้โซลูชันแบบบูรณาการที่ช่วยเพิ่มทั้งสองด้านของงาน แนวทาง Innovation Lab ของเราหมายความว่าเรากำลังพัฒนาฟีเจอร์ที่ทันสมัยอย่างต่อเนื่องตามความต้องการของผู้ใช้จริง"
+      },
+      q4: {
+        question: "มีทดลองใช้ฟรีหรือการสาธิตหรือไม่?",
+        answer: "มี! เราให้สิทธิ์การสาธิตฟีเจอร์หลักของเรา คุณสามารถสำรวจแดชบอร์ดวิเคราะห์ เครื่องมือระบบอัตโนมัติ และผู้ช่วย AI สร้างสรรค์ ติดต่อทีมของเราผ่านการสมัครรับข่าวสารหรือติดต่อที่ hello@fortelab.dev เพื่อเข้าถึงการสาธิต"
+      },
+      q5: {
+        question: "จะเริ่มต้นใช้ ForteLab ได้อย่างไร?",
+        answer: "การเริ่มต้นง่ายมาก! เข้าร่วม Creative Innovation Hub newsletter ของเราเพื่อติดตามฟีเจอร์ใหม่และโอกาสการเข้าถึงก่อนใคร ทีมของเราจะแนะนำคุณผ่านกระบวนการออนบอร์ดและช่วยคุณค้นหาเครื่องมือที่เหมาะกับการทำงานของคุณที่สุด"
+      },
+      q6: {
+        question: "มีการสนับสนุนแบบไหนบ้าง?",
+        answer: "เราให้การสนับสนุนแบบครอบคลุมรวมถึงเอกสารประกอบ วิดีโอสอน และความช่วยเหลือโดยตรงจากทีมของเรา ในฐานะ Innovation Lab เราร่วมมือกับผู้ใช้อย่างกระตือรือร้นเพื่อปรับปรุงแพลตฟอร์มของเราต่อไปตามข้อเสนอแนะและความต้องการของพวกเขา"
+      }
+    },
+
+    // Creative Innovation Hub
+    creative: {
+      title: "Creative Innovation Hub",
+      subtitle: "เครื่องมือ AI แบบครบวงจรสำหรับครีเอเตอร์ไทย — แปลงคอนเทนต์หลายภาษาหลายแพลตฟอร์ม พร้อมดึงเทรนด์โซเชียลไทยมาเป็นไอเดียสร้างสรรค์",
+      tools: {
+        trend: {
+          title: "Trend2Content",
+          desc: "ติดตามเทรนด์โซเชียลไทยแบบเรียลไทม์ แล้วแปลงเป็นไอเดียคอนเทนต์ที่ใช่สำหรับแบรนด์คุณ"
+        },
+        format: {
+          title: "Multi-Format Studio", 
+          desc: "คอนเทนต์เดียวสร้างได้หลายรูปแบบ — โพสต์ IG, TikTok, Facebook, YouTube พร้อมปรับขนาดและโทนสีอัตโนมัติ"
+        },
+        visual: {
+          title: "Auto-Visual Generator",
+          desc: "AI สร้างกราฟิก อินโฟกราฟิก และวิชวลคอนเทนต์สไตล์ไทย ที่ดึงดูดใจและเข้าใจง่าย"
+        },
+        caption: {
+          title: "Caption AI Thai",
+          desc: "เขียนแคปชั่นภาษาไทยที่โดนใจ มีอารมณ์ขัน และสร้างเอนเกจเมนต์สูง ปรับโทนได้ตามแบรนด์"
+        }
+      },
+      cta: {
+        title: "พร้อมสร้างสรรค์คอนเทนต์ที่โดนใจคนไทย?",
+        subtitle: "เริ่มต้นฟรี หรือเข้าร่วม Early Access เพื่อใช้งานก่อนใคร",
+        primary: "เข้าร่วม Early Access",
+        secondary: "ดูตัวอย่างผลงาน"
+      }
+    },
+    
     // Contact Section
     contact: {
-      title: "คำปรึกษาการบูรณาการระดับองค์กร",
-      subtitle: "จองคำปรึกษาทางเทคนิคเพื่อหารือเกี่ยวกับความต้องการระบบอัตโนมัติข้อมูลของคุณและสำรวจโซลูชันการบูรณาการ AI แบบกำหนดเอง",
+      title: "ติดต่อเรา",
+      subtitle: "บอกเราเกี่ยวกับความต้องการในการพัฒนาของคุณ — เราจะช่วยให้คุณสร้างสรรค์และสร้างนวัตกรรม",
       form: {
-        name: "ชื่อ-นามสกุล",
-        email: "อีเมลทางการ",
-        message: "อธิบายความต้องการระบบอัตโนมัติข้อมูลและความท้าทายในเวิร์กโฟลว์ปัจจุบันของคุณ",
-        submit: "ขอคำปรึกษา",
-        success: "ขอบคุณสำหรับการสอบถาม ทีมเทคนิคของเราจะติดต่อคุณภายใน 24 ชั่วโมงเพื่อหารือเกี่ยวกับความต้องการของคุณ"
+        name: "ชื่อของคุณ",
+        email: "อีเมล",
+        message: "บอกเราว่าคุณต้องการสร้างอะไร",
+        submit: "ส่ง",
+        success: "ขอบคุณสำหรับข้อความของคุณ ทีมของเราจะติดต่อกลับเร็วๆ นี้เพื่อหารือเกี่ยวกับโปรเจกต์ของคุณ"
       }
     },
     
     // Footer
     footer: {
-      tagline: "นวัตกรรม การเชื่อมต่อ อนาคต",
+      tagline: "นวัตกรรม เชื่อมต่อ เปลี่ยนแปลง",
       copyright: "© 2025 ForteLab — สงวนลิขสิทธิ์ทุกประการ",
       social: {
         title: "ติดตามเรา"
+      },
+      cta: {
+        title: "พร้อมสร้างนวัตกรรมแล้วใช่ไหม?",
+        subtitle: "เปลี่ยนไอเดียของคุณให้เป็นจริง เชื่อมต่อกับอนาคตแห่งความคิดสร้างสรรค์",
+        button: "เริ่มเปลี่ยนแปลง"
       }
     }
   }
@@ -327,6 +535,7 @@ function updateContent(lang) {
   // Update navigation
   updateElement('[data-i18n="nav.solutions"]', t.nav.solutions);
   updateElement('[data-i18n="nav.useCases"]', t.nav.useCases);
+  updateElement('[data-i18n="nav.newsletter"]', t.nav.newsletter);
   updateElement('[data-i18n="nav.why"]', t.nav.why);
   updateElement('[data-i18n="nav.developers"]', t.nav.developers);
   updateElement('[data-i18n="nav.contact"]', t.nav.contact);
@@ -356,6 +565,7 @@ function updateContent(lang) {
   
   // Update other sections
   updateUseCases(t.usecases);
+  updateNewsletter(t.newsletter);
   updateWhy(t.why);
   updateDevelopers(t.developers);
   updateSecurity(t.security);
@@ -388,6 +598,12 @@ function updateUseCases(t) {
   document.querySelector('[data-i18n="usecases.card4.description"]').textContent = t.cards[3].description;
   document.querySelector('[data-i18n="usecases.card4.tag1"]').textContent = t.cards[3].tag1;
   document.querySelector('[data-i18n="usecases.card4.tag2"]').textContent = t.cards[3].tag2;
+}
+
+function updateNewsletter(t) {
+  document.querySelector('[data-i18n="newsletter.title"]').textContent = t.title;
+  document.querySelector('[data-i18n="newsletter.subtitle"]').textContent = t.subtitle;
+  document.querySelector('[data-i18n="newsletter.cta"]').textContent = t.cta;
 }
 
 function updateWhy(t) {

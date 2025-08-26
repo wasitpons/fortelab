@@ -4,178 +4,52 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#1B5CFF" />
-  <meta name="msapplication-TileColor" content="#1B5CFF" />
   <title>ForteLab — Innovation. Connection. Future.</title>
-  <meta name="description" content="ForteLab - AI-driven innovation lab that transforms public data into intelligent automation systems. Simplifying professional workflows through advanced data collection and personalized AI solutions." />
-  <meta name="keywords" content="AI, Data Analytics, Creative Tools, Innovation, Machine Learning, ForteLab" />
+  <meta name="description" content="ForteLab - AI-driven innovation lab that transforms public data into intelligent automation systems." />
   
-  <!-- Favicon and Icons -->
   <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
   <link rel="icon" type="image/svg+xml" href="./assets/fortelab_icon.svg" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/fortelab_icon.svg" />
-  <link rel="manifest" href="./assets/site.webmanifest" />
-  <meta name="msapplication-config" content="./assets/browserconfig.xml" />
-  
-  <!-- Social Media Links -->
-  <link rel="me" href="https://www.facebook.com/profile.php?id=61579829097837" />
-  <link rel="me" href="https://www.linkedin.com/company/fortelab-ai" />
-  <meta name="author" content="ForteLab" />
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://fortelab.github.io/" />
-  <meta property="og:title" content="ForteLab — Innovation. Connection. Future." />
-  <meta property="og:description" content="ForteLab - AI-driven innovation lab that transforms public data into intelligent automation systems. Simplifying professional workflows through advanced data collection and personalized AI solutions." />
-  <meta property="og:image" content="https://fortelab.github.io/assets/fortelab_icon.svg" />
-  <meta property="og:image:alt" content="ForteLab Logo" />
-  <meta property="og:site_name" content="ForteLab" />
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="ForteLab — Innovation. Connection. Future." />
-  <meta property="twitter:description" content="ForteLab - AI-driven innovation lab that transforms public data into intelligent automation systems. Simplifying professional workflows through advanced data collection and personalized AI solutions." />
-  <meta property="twitter:image" content="https://fortelab.github.io/assets/fortelab_icon.svg" />
-  <meta property="twitter:image:alt" content="ForteLab Logo" />
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Symbols:wght@100..900&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="./assets/styles.css" />
   <script src="./assets/translations.js" defer></script>
   <script src="./assets/main.js" defer></script>
+  <script src="./assets/templates.js" defer></script>
 </head>
 <body class="lang-en">
-  <!-- Nav -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#">
-        <img class="logo" src="./assets/fortelab_icon.svg" alt="ForteLab logo icon" />
-        <span class="wordmark">ForteLab</span>
-      </a>
-      
-      <!-- Desktop Navigation -->
-      <nav class="menu desktop-menu">
-        <div class="menu-item dropdown">
-          <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
-          <div class="dropdown-content">
-            <div class="dropdown-section">
-              <h4>AI Tools</h4>
-              <a href="#solutions">Content Studio</a>
-              <a href="#solutions">Data Analytics</a>
-              <a href="#solutions">Creative Tools</a>
-            </div>
-          </div>
-        </div>
-        <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
-        <a href="#why" data-i18n="nav.why">Why ForteLab</a>
-        <div class="menu-item dropdown">
-          <a href="#developers" data-i18n="nav.developers">Developers</a>
-          <div class="dropdown-content">
-            <div class="dropdown-section">
-              <h4>Resources</h4>
-              <a href="#developers">Documentation</a>
-              <a href="#developers">API Reference</a>
-              <a href="#developers">Code Samples</a>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Language Switcher -->
-        <div class="language-switcher">
-          <button class="lang-btn active" data-lang-switch="en">EN</button>
-          <button class="lang-btn" data-lang-switch="th">TH</button>
-        </div>
-        
-        <a href="#contact" class="btn btn--ghost" data-i18n="nav.contact">Contact</a>
-      </nav>
-      
-      <!-- Mobile Menu Button -->
-      <button class="mobile-menu-btn" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    
-    <!-- Mobile Navigation -->
-    <nav class="mobile-menu">
-      <div class="mobile-menu-content">
-        <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
-        <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
-        <a href="#why" data-i18n="nav.why">Why ForteLab</a>
-        <a href="#developers" data-i18n="nav.developers">Developers</a>
-        <div class="mobile-language-switcher">
-          <button class="lang-btn active" data-lang-switch="en">English</button>
-          <button class="lang-btn" data-lang-switch="th">ไทย</button>
-        </div>
-        <a href="#contact" class="btn btn--primary" data-i18n="nav.contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-gradient"></div>
-    <div class="container hero-inner">
-      <div class="hero-copy">
-        <h1 data-i18n="hero.title" class="animate-in">Build powerful AI‑first experiences</h1>
-        <p data-i18n="hero.subtitle" class="animate-in">Connect people, data, and ideas with a single platform. Create content, analyze insights, and bring imagination to life — simply and securely.</p>
-        <div class="hero-cta animate-in">
-          <a class="btn" href="#contact" data-i18n="hero.cta1">Get Started</a>
-          <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta2">Talk to us</a>
-        </div>
-        <ul class="hero-bullets animate-in">
-          <li data-i18n="hero.bullet1">99.99% reliability</li>
-          <li data-i18n="hero.bullet2">SOC2‑ready mindset</li>
-          <li data-i18n="hero.bullet3">GDPR‑aware design</li>
-        </ul>
-      </div>
-      <div class="hero-art">
-        <div class="floating-shapes">
-          <div class="shape shape-1"></div>
-          <div class="shape shape-2"></div>
-          <div class="shape shape-3"></div>
-          <div class="shape shape-4"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container logos animate-in">
-      <p class="logos-label" data-i18n="hero.trustedBy">Trusted by teams</p>
-      <div class="logos-row">
-        <span class="logo-pill">TechCorp</span>
-        <span class="logo-pill">DataFlow</span>
-        <span class="logo-pill">Innovation Labs</span>
-        <span class="logo-pill">Creative Studio</span>
-        <span class="logo-pill">AI Solutions</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solutions -->
-  <section id="solutions" class="section">
+  
+  <div id="navigation-container"></div>
+  <div id="hero-container"></div>
+  
+  <!-- Solutions (inline) -->
+  <section id="solutions" class="section productivity">
     <div class="container">
       <h2 data-i18n="solutions.title" class="animate-on-scroll">Experience the simplicity of building with ForteLab</h2>
       <p class="sub" data-i18n="solutions.subtitle">From concept to production — tools that scale with you.</p>
       <div class="grid grid-3">
-        <article class="card animate-on-scroll" data-solution-card="0">
+        <article class="card animate-on-scroll">
           <div class="card-icon">
-            <div class="icon-gradient icon-content"></div>
+            <i class="fas fa-video fa-2x"></i>
           </div>
           <h3 data-i18n="solutions.card1.title">AI Content Studio</h3>
           <p data-i18n="solutions.card1.description">Turn text and stories into short videos, graphics, and sound with AI.</p>
           <a href="#contact" class="link" data-i18n="solutions.card1.cta">Start creating →</a>
         </article>
-        <article class="card animate-on-scroll" data-solution-card="1">
+        <article class="card animate-on-scroll">
           <div class="card-icon">
-            <div class="icon-gradient icon-analytics"></div>
+            <i class="fas fa-chart-line fa-2x"></i>
           </div>
           <h3 data-i18n="solutions.card2.title">Data Analytics</h3>
           <p data-i18n="solutions.card2.description">Collect, clean, and simplify data into insights anyone can act on.</p>
           <a href="#contact" class="link" data-i18n="solutions.card2.cta">See insights →</a>
         </article>
-        <article class="card animate-on-scroll" data-solution-card="2">
+        <article class="card animate-on-scroll">
           <div class="card-icon">
-            <div class="icon-gradient icon-creative"></div>
+            <i class="fas fa-palette fa-2x"></i>
           </div>
           <h3 data-i18n="solutions.card3.title">Creative Tools</h3>
           <p data-i18n="solutions.card3.description">Reimagine classic games with AI‑generated art, audio, and characters.</p>
@@ -185,15 +59,15 @@
     </div>
   </section>
 
-  <!-- Use Cases -->
-  <section id="use-cases" class="section alt">
+  <!-- Use Cases (inline) -->  
+  <section id="use-cases" class="section productivity-alt">
     <div class="container">
       <h2 data-i18n="usecases.title" class="animate-on-scroll">Real-world applications for working professionals</h2>
       <p class="sub" data-i18n="usecases.subtitle">Discover how AI-driven insights transform your daily routine and boost productivity.</p>
       <div class="grid grid-2">
-        <article class="card animate-on-scroll" data-usecase-card="0">
+        <article class="card animate-on-scroll">
           <div class="card-icon">
-            <div class="icon-gradient icon-finance"></div>
+            <i class="fas fa-chart-pie fa-2x"></i>
           </div>
           <h3 data-i18n="usecases.card1.title">Smart Financial Planning</h3>
           <p data-i18n="usecases.card1.description">Analyze market trends and spending patterns to optimize your budget and investment decisions automatically.</p>
@@ -202,9 +76,9 @@
             <span class="feature-tag" data-i18n="usecases.card1.tag2">Budget Optimization</span>
           </div>
         </article>
-        <article class="card animate-on-scroll" data-usecase-card="1">
+        <article class="card animate-on-scroll">
           <div class="card-icon">
-            <div class="icon-gradient icon-productivity"></div>
+            <i class="fas fa-clock fa-2x"></i>
           </div>
           <h3 data-i18n="usecases.card2.title">Productivity Intelligence</h3>
           <p data-i18n="usecases.card2.description">Track work patterns and suggest optimal schedules to maximize efficiency and maintain work-life balance.</p>
@@ -213,9 +87,9 @@
             <span class="feature-tag" data-i18n="usecases.card2.tag2">Schedule Optimization</span>
           </div>
         </article>
-        <article class="card animate-on-scroll" data-usecase-card="2">
+        <article class="card animate-on-scroll">
           <div class="card-icon">
-            <div class="icon-gradient icon-health"></div>
+            <i class="fas fa-heartbeat fa-2x"></i>
           </div>
           <h3 data-i18n="usecases.card3.title">Health & Wellness Insights</h3>
           <p data-i18n="usecases.card3.description">Monitor daily habits and environmental data to provide personalized health recommendations and stress management tips.</p>
@@ -224,9 +98,9 @@
             <span class="feature-tag" data-i18n="usecases.card3.tag2">Wellness Tips</span>
           </div>
         </article>
-        <article class="card animate-on-scroll" data-usecase-card="3">
+        <article class="card animate-on-scroll">
           <div class="card-icon">
-            <div class="icon-gradient icon-learning"></div>
+            <i class="fas fa-graduation-cap fa-2x"></i>
           </div>
           <h3 data-i18n="usecases.card4.title">Continuous Learning</h3>
           <p data-i18n="usecases.card4.description">Curate relevant content from industry sources and create personalized learning paths for career advancement.</p>
@@ -239,147 +113,137 @@
     </div>
   </section>
 
-  <!-- Why ForteLab -->
-  <section id="why" class="section">
+  <div id="newsletter-container"></div>
+  
+  <!-- Creative Innovation Hub -->
+  <section id="creative-hub" class="section creative-innovation">
+    <div class="creative-bg-shapes">
+      <div class="shape-circle shape-1"></div>
+      <div class="shape-triangle shape-2"></div>
+      <div class="shape-blob shape-3"></div>
+    </div>
+    
     <div class="container">
-      <h2 data-i18n="why.title" class="animate-on-scroll">Why ForteLab</h2>
-      <div class="grid grid-4">
-        <article class="pill animate-on-scroll" data-why-card="0">
-          <div class="pill-icon">
-            <div class="icon-data-insights"></div>
+      <div class="creative-header animate-on-scroll">
+        <h2 class="creative-title">
+          <span class="gradient-text" data-i18n="creative.title">Creative Innovation Hub</span>
+        </h2>
+        <p class="creative-subtitle" data-i18n="creative.subtitle">
+          เครื่องมือ AI แบบครบวงจรสำหรับครีเอเตอร์ไทย — แปลงคอนเทนต์หลายภาษาหลายแพลตฟอร์ม พร้อมดึงเทรนด์โซเชียลไทยมาเป็นไอเดียสร้างสรรค์
+        </p>
+      </div>
+      
+      <div class="creative-tools-grid">
+        <div class="creative-tool animate-on-scroll" data-tool="trend2content">
+          <div class="tool-icon trend-icon">
+            <i class="fas fa-trending-up"></i>
           </div>
-          <h4 data-i18n="why.card1.title">Data-Driven Insights</h4>
-          <p data-i18n="why.card1.description">Transform raw public data into actionable intelligence that drives better decision-making.</p>
-        </article>
-        <article class="pill animate-on-scroll" data-why-card="1">
-          <div class="pill-icon">
-            <div class="icon-personalized"></div>
+          <h3 data-i18n="creative.tools.trend.title">Trend2Content</h3>
+          <p data-i18n="creative.tools.trend.desc">ติดตามเทรนด์โซเชียลไทยแบบเรียลไทม์ แล้วแปลงเป็นไอเดียคอนเทนต์ที่ใช่สำหรับแบรนด์คุณ</p>
+          <div class="tool-features">
+            <span class="feature-tag">🔥 เทรนด์ไทย</span>
+            <span class="feature-tag">📊 วิเคราะห์อัตโนมัติ</span>
           </div>
-          <h4 data-i18n="why.card2.title">Personalized Experience</h4>
-          <p data-i18n="why.card2.description">AI understands your unique lifestyle and preferences to deliver tailored recommendations.</p>
-        </article>
-        <article class="pill animate-on-scroll" data-why-card="2">
-          <div class="pill-icon">
-            <div class="icon-privacy-first"></div>
+        </div>
+        
+        <div class="creative-tool animate-on-scroll" data-tool="multiformat">
+          <div class="tool-icon format-icon">
+            <i class="fas fa-layer-group"></i>
           </div>
-          <h4 data-i18n="why.card3.title">Privacy-First</h4>
-          <p data-i18n="why.card3.description">Your data stays secure with enterprise-grade encryption and transparent privacy controls.</p>
-        </article>
-        <article class="pill animate-on-scroll" data-why-card="3">
-          <div class="pill-icon">
-            <div class="icon-seamless"></div>
+          <h3 data-i18n="creative.tools.format.title">Multi-Format Studio</h3>
+          <p data-i18n="creative.tools.format.desc">คอนเทนต์เดียวสร้างได้หลายรูปแบบ — โพสต์ IG, TikTok, Facebook, YouTube พร้อมปรับขนาดและโทนสีอัตโนมัติ</p>
+          <div class="tool-features">
+            <span class="feature-tag">📱 Multi-Platform</span>
+            <span class="feature-tag">🎨 Auto-Resize</span>
           </div>
-          <h4 data-i18n="why.card4.title">Seamless Integration</h4>
-          <p data-i18n="why.card4.description">Effortlessly connects with your daily workflow without disrupting your existing routines.</p>
-        </article>
+        </div>
+        
+        <div class="creative-tool animate-on-scroll" data-tool="autovisual">
+          <div class="tool-icon visual-icon">
+            <i class="fas fa-magic"></i>
+          </div>
+          <h3 data-i18n="creative.tools.visual.title">Auto-Visual Generator</h3>
+          <p data-i18n="creative.tools.visual.desc">AI สร้างกราฟิก อินโฟกราฟิก และวิชวลคอนเทนต์สไตล์ไทย ที่ดึงดูดใจและเข้าใจง่าย</p>
+          <div class="tool-features">
+            <span class="feature-tag">🖼️ สไตล์ไทย</span>
+            <span class="feature-tag">⚡ สร้างเร็ว</span>
+          </div>
+        </div>
+        
+        <div class="creative-tool animate-on-scroll" data-tool="captionai">
+          <div class="tool-icon caption-icon">
+            <i class="fas fa-comment-dots"></i>
+          </div>
+          <h3 data-i18n="creative.tools.caption.title">Caption AI Thai</h3>
+          <p data-i18n="creative.tools.caption.desc">เขียนแคปชั่นภาษาไทยที่โดนใจ มีอารมณ์ขัน และสร้างเอนเกจเมนต์สูง ปรับโทนได้ตามแบรนด์</p>
+          <div class="tool-features">
+            <span class="feature-tag">🇹🇭 ภาษาไทย</span>
+            <span class="feature-tag">😊 Engaging</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="creative-cta animate-on-scroll">
+        <div class="cta-content">
+          <h3 data-i18n="creative.cta.title">พร้อมสร้างสรรค์คอนเทนต์ที่โดนใจคนไทย?</h3>
+          <p data-i18n="creative.cta.subtitle">เริ่มต้นฟรี หรือเข้าร่วม Early Access เพื่อใช้งานก่อนใคร</p>
+        </div>
+        <div class="cta-buttons">
+          <a href="#newsletter" class="btn btn-creative" data-i18n="creative.cta.primary">เข้าร่วม Early Access</a>
+          <a href="#faq" class="btn btn-creative-outline" data-i18n="creative.cta.secondary">ดูตัวอย่างผลงาน</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Developers -->
-  <section id="developers" class="section">
+  <!-- FAQ (inline) -->
+  <section id="faq" class="section creativity">
     <div class="container">
-      <div class="dev-header animate-on-scroll">
-        <h2 data-i18n="developers.title">Any platform, any device — coming soon</h2>
-        <p data-i18n="developers.subtitle" class="sub">Developer tools and documentation will be available shortly.</p>
-      </div>
-      <div class="coming-soon-badge animate-on-scroll">
-        <span data-i18n="developers.comingSoon">Coming Soon</span>
-      </div>
-      <div class="dev-cta animate-on-scroll">
-        <a class="btn btn--disabled" href="#contact" data-i18n="developers.cta1">View docs</a>
-        <a class="btn btn--ghost btn--disabled" href="#contact" data-i18n="developers.cta2">Explore samples</a>
-      </div>
-      <ul class="sdk-list animate-on-scroll">
-        <li>JavaScript</li><li>React</li><li>Flutter</li><li>iOS</li><li>Android</li><li>Python</li><li>Node.js</li><li>Go</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Security & Testimonials -->
-  <section class="section alt">
-    <div class="container">
-      <h2 data-i18n="security.title" class="animate-on-scroll">Secure, reliable, and scalable</h2>
-      <p class="sub" data-i18n="security.subtitle">We build with security‑first principles and global reach.</p>
-      <div class="grid grid-2">
-        <article class="card soft animate-on-scroll">
-          <div class="card-icon">
-            <div class="icon-gradient icon-security"></div>
+      <h2 data-i18n="faq.title" class="animate-on-scroll">Frequently Asked Questions</h2>
+      <p class="sub" data-i18n="faq.subtitle">Get answers to common questions about ForteLab and our AI-powered solutions.</p>
+      
+      <div class="faq-container">
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" data-i18n="faq.q1.question">What is ForteLab and how does it work?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q1.answer">ForteLab is an Innovation Lab that combines AI-powered productivity tools with creative solutions. We help professionals and creators transform their workflow through intelligent automation, data insights, and AI-assisted content creation.</p>
           </div>
-          <h3 data-i18n="security.compliance.title">Security & Compliance</h3>
-          <ul class="list">
-            <li data-i18n="security.compliance.item1">SOC‑2 mindset</li>
-            <li data-i18n="security.compliance.item2">GDPR‑aware design</li>
-            <li data-i18n="security.compliance.item3">Role‑based access</li>
-          </ul>
-        </article>
-        <article class="card soft animate-on-scroll">
-          <div class="card-icon">
-            <div class="icon-gradient icon-testimonial"></div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" data-i18n="faq.q2.question">Who can benefit from ForteLab's tools?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q2.answer">Our platform is designed for working professionals and content creators who want AI-assisted workflows.</p>
           </div>
-          <h3 data-i18n="security.testimonial.title">What teams say</h3>
-          <p data-i18n="security.testimonial.quote">"ForteLab helped us ship faster with less complexity."</p>
-          <p class="by" data-i18n="security.testimonial.author">— Product Lead, EdTech</p>
-        </article>
-      </div>
-      <div class="cta-row animate-on-scroll">
-        <a class="btn" href="#contact" data-i18n="security.cta1">Start building</a>
-        <a class="btn btn--ghost" href="#contact" data-i18n="security.cta2">Talk to an expert</a>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" data-i18n="faq.q3.question">What makes ForteLab different from other AI platforms?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q3.answer">ForteLab uniquely balances productivity and creativity. While many platforms focus solely on efficiency or creativity, we provide integrated solutions that enhance both aspects of your work.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" data-i18n="faq.q4.question">Is there a free trial or demo available?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q4.answer">Yes! We offer demo access to our core features. Contact our team through the newsletter signup or reach out to hello@fortelab.dev for demo access.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" data-i18n="faq.q5.question">How do I get started with ForteLab?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q5.answer">Getting started is easy! Join our Creative Innovation Hub newsletter to stay updated on new features and early access opportunities.</p>
+          </div>
+        </div>
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-question" data-i18n="faq.q6.question">What kind of support do you provide?</button>
+          <div class="faq-answer">
+            <p data-i18n="faq.q6.answer">We provide comprehensive support including documentation, video tutorials, and direct assistance from our team.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="contact-header animate-on-scroll">
-        <h2 data-i18n="contact.title">Contact us</h2>
-        <p class="sub" data-i18n="contact.subtitle">Tell us about your idea — we'll help you connect and create.</p>
-      </div>
-      <form class="contact-form animate-on-scroll" onsubmit="handleFormSubmit(event)">
-        <input type="text" data-i18n="contact.form.name" placeholder="Your name" required />
-        <input type="email" data-i18n="contact.form.email" placeholder="Email" required />
-        <textarea rows="4" data-i18n="contact.form.message" placeholder="Tell us what you want to build" required></textarea>
-        <button class="btn" type="submit" data-i18n="contact.form.submit">Send</button>
-      </form>
-    </div>
-  </section>
+  <div id="footer-container"></div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="foot-brand">
-        <div class="brand">
-          <img class="logo" src="./assets/fortelab_icon.svg" alt="ForteLab logo icon" />
-          <span class="wordmark">ForteLab</span>
-        </div>
-        <small data-i18n="footer.tagline">Innovation. Connection. Future.</small>
-      </div>
-      <div class="foot-links">
-        <div class="footer-section">
-          <h4>Product</h4>
-          <a href="#solutions" data-i18n="nav.solutions">Solutions</a>
-          <a href="#why" data-i18n="nav.why">Why ForteLab</a>
-          <a href="#developers" data-i18n="nav.developers">Developers</a>
-        </div>
-        <div class="footer-section">
-          <h4>Company</h4>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
-        </div>
-        <div class="footer-section">
-          <h4 data-i18n="footer.social.title">Follow Us</h4>
-          <a href="https://www.facebook.com/profile.php?id=61579829097837" target="_blank" rel="noopener noreferrer" class="social-link">
-            <span>Facebook</span>
-          </a>
-          <a href="https://www.linkedin.com/company/fortelab-ai" target="_blank" rel="noopener noreferrer" class="social-link">
-            <span>LinkedIn</span>
-          </a>
-        </div>
-      </div>
-      <div class="foot-legal">
-        <small data-i18n="footer.copyright">© 2025 ForteLab — All rights reserved.</small>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>

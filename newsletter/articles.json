@@ -1,0 +1,54 @@
+{
+  "articles": [
+    {
+      "title": "The Future of AI-Powered IDEs: Transforming Developer Experience",
+      "title_th": "อนาคตของ IDE ขับเคลื่อนด้วย AI: เปลี่ยนแปลงประสบการณ์นักพัฒนา",
+      "excerpt": "As artificial intelligence continues to reshape the software development landscape, the next generation of IDEs is emerging with capabilities that seemed like science fiction just a few years ago.",
+      "excerpt_th": "เมื่อปัญญาประดิษฐ์ยังคงปรับรูปแบบภูมิทัศน์การพัฒนาซอฟต์แวร์ IDEs รุ่นใหม่กำลังเกิดขึ้นพร้อมความสามารถที่ดูเหมือนนิยายวิทยาศาสตร์เมื่อไม่กี่ปีก่อน",
+      "date": "2025-01-25",
+      "category": "AI & Development",
+      "category_th": "AI และการพัฒนา",
+      "filename": "20250125-ai-powered-ide-future.html"
+    },
+    {
+      "title": "Innovation Lab Methodology: Building Tomorrow's Software Today",
+      "title_th": "วิธีการ Innovation Lab: สร้างซอฟต์แวร์แห่งอนาคตในวันนี้",
+      "excerpt": "The Innovation Lab approach combines experimental development with practical application, creating a unique environment where breakthrough technologies can mature rapidly.",
+      "excerpt_th": "แนวทาง Innovation Lab ผสมผสานการพัฒนาเชิงทดลองกับการประยุกต์ใช้จริง สร้างสภาพแวดล้อมที่เป็นเอกลักษณ์ที่เทคโนโลยีก้าวกระโดดสามารถพัฒนาได้อย่างรวดเร็ว",
+      "date": "2025-01-20",
+      "category": "Innovation & Methodology",
+      "category_th": "นวัตกรรมและวิธีการ",
+      "filename": "20250120-innovation-lab-methodology.html"
+    },
+    {
+      "title": "The Code Intelligence Revolution: How AI is Changing Software Development",
+      "title_th": "ปฏิวัติปัญญาโค้ด: AI กำลังเปลี่ยนแปลงการพัฒนาซอฟต์แวร์อย่างไร",
+      "excerpt": "Artificial Intelligence is not just assisting developers—it's fundamentally transforming how we think about code creation, analysis, and maintenance.",
+      "excerpt_th": "ปัญญาประดิษฐ์ไม่ได้เพียงช่วยเหลือนักพัฒนา—แต่กำลังเปลี่ยนแปลงพื้นฐานวิธีคิดของเราเกี่ยวกับการสร้าง วิเคราะห์ และบำรุงรักษาโค้ด",
+      "date": "2025-01-15",
+      "category": "AI & Code Analysis",
+      "category_th": "AI และการวิเคราะห์โค้ด",
+      "filename": "20250115-code-intelligence-revolution.html"
+    },
+    {
+      "title": "Designing for Developer Experience: Lessons from Modern IDE Development",
+      "title_th": "การออกแบบเพื่อประสบการณ์นักพัฒนา: บทเรียนจากการพัฒนา IDE สมัยใหม่",
+      "excerpt": "Great developer tools aren't just functional—they're delightful to use. Here's what we've learned about crafting experiences that developers actually love.",
+      "excerpt_th": "เครื่องมือนักพัฒนาที่ยอดเยี่ยมไม่ได้มีแค่การทำงาน—แต่น่าใช้งาน นี่คือสิ่งที่เราได้เรียนรู้เกี่ยวกับการสร้างประสบการณ์ที่นักพัฒนารักจริงๆ",
+      "date": "2025-01-10",
+      "category": "UX & Design",
+      "category_th": "UX และการออกแบบ",
+      "filename": "20250110-developer-experience-design.html"
+    },
+    {
+      "title": "Open Source Innovation: Building the Future Together",
+      "title_th": "นวัตกรรมโอเพนซอร์ส: สร้างอนาคตร่วมกัน",
+      "excerpt": "The most transformative developer tools emerge from collaborative communities. Here's why open source development is essential for innovation and how ForteLab contributes to this ecosystem.",
+      "excerpt_th": "เครื่องมือนักพัฒนาที่เปลี่ยนแปลงโลกที่สุดเกิดขึ้นจากชุมชนที่ร่วมมือกัน นี่คือเหตุผลที่การพัฒนาโอเพนซอร์สจำเป็นสำหรับนวัตกรรม และ ForteLab มีส่วนร่วมในระบบนิเวศนี้อย่างไร",
+      "date": "2025-01-05",
+      "category": "Open Source & Community",
+      "category_th": "โอเพนซอร์สและชุมชน",
+      "filename": "20250105-open-source-innovation.html"
+    }
+  ]
+}
