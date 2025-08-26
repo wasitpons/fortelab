@@ -13,7 +13,7 @@ const translations = {
     
     // Hero Section
     hero: {
-      title: "Innovate. Connect. Transform.",
+      title: "Build powerful AI‑first experiences",
       subtitle: "Connect people, data, and ideas with a single platform. Create content, analyze insights, and bring imagination to life — simply and securely.",
       cta1: "Start Innovating",
       cta2: "Connect with Us",
@@ -238,7 +238,7 @@ const translations = {
     
     // Footer
     footer: {
-      tagline: "Innovate. Connect. Transform.",
+      tagline: "Build powerful AI‑first experiences",
       copyright: "© 2025 ForteLab — All rights reserved.",
       social: {
         title: "Follow Us"
