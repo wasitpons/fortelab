@@ -145,14 +145,6 @@ jobs:
 - **Loading Time**: Sub-3 second load times
 - **Bundle Size**: <500KB total (including fonts)
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test across browsers and devices
-5. Submit a pull request
-
 ## Content Guidelines
 
 ### Writing Style
